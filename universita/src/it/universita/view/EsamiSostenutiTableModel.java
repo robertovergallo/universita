@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class EsamiSostenutiTableModel extends AbstractTableModel {
 
     private ArrayList<Esame> esamiSostenuti;
+    private String columnNames[] = {"Corso","Voto","Lode","Data"};
 
     public EsamiSostenutiTableModel(ArrayList<Esame> esamiSostenuti) {
         this.esamiSostenuti = esamiSostenuti;
@@ -20,6 +21,11 @@ public class EsamiSostenutiTableModel extends AbstractTableModel {
     public Class getColumnClass(int columnIndex) {
         if(columnIndex == 2) return Boolean.class;
         return String.class;
+    }
+
+    @Override
+    public String getColumnName(int columnIndex) {
+        return columnNames[columnIndex];
     }
 
     @Override

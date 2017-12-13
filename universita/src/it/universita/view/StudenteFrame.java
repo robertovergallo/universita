@@ -42,7 +42,7 @@ public class StudenteFrame extends JFrame {
         EsamiSostenutiTableModel estm = new EsamiSostenutiTableModel(s.getEsamiSostenuti());
 
         JTable esamiSostenuti = new JTable(estm);
-        getContentPane().add(esamiSostenuti, BorderLayout.CENTER);
+        getContentPane().add(new JScrollPane(esamiSostenuti), BorderLayout.CENTER);
 
 
         getContentPane().add(new JLabel("BENVENUTO "+s.getNome()+" "+s.getCognome()+" (matr. " + s.getMatricola()+")"), BorderLayout.NORTH);
