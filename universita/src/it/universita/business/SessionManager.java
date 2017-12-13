@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * Created by roberto on 12/12/2017.
  */
-public class SessionManager {  //ciao
+public class SessionManager {  //ciao3
 
     private static SessionManager instance;
 
